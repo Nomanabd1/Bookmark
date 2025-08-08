@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+
+@theme{
+--color-primary: hsl(231, 69%, 60%);
+--color-secondary: hsl(0, 94%, 66%);
+--color-grayblue: hsl(229, 8%, 60%);
+--color-verydarkblue: hsl(229, 31%, 21%);
+
+
+--font-sans:'Rubik', 'sans-serif';
+}
+
+@utility bg-hero{
+@apply absolute bg-primary w-[2000px] h-[300px] left-[30%] rounded-l-full top-52 hidden lg:block;
+}
+
+
+@utility bg-tab{
+@apply absolute bg-primary w-[2000px] h-[300px] right-[60%] rounded-r-full top-60 hidden lg:block;
+}
+@layer utilities{
+.bg-dots{
+    background:url(../images/dots.svg);
+    @apply bg-repeat-x 
+}
+
+}
